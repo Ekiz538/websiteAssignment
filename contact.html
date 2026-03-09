@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic page setup -->
     <meta charset="UTF-8">
-    <title>Contact - SmartTech IT Solutions</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TechSupport Pro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>SmartTech IT Solutions</h1>
-    <p>Reliable Computer Repair & Tech Support Services</p>
-</header>
+    <!-- =========================
+         HEADER + NAVIGATION
+    ========================== -->
+    <header>
+        <nav>
+            <div class="logo">TechSupport Pro</div>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-</nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section>
-    <h2>Book a Repair</h2>
+    <!-- =========================
+         CONTACT PAGE MAIN SECTION
+    ========================== -->
+    <section id="contact" class="contact-page">
+        <h2>Contact Us</h2>
 
-    <form class="contact-form">
+        <div class="contact-intro">
+            <p>
+                Need technical assistance or have a question about our services?
+                Our support team is ready to help. Fill out the form below and
+                we will get back to you as soon as possible.
+            </p>
+        </div>
 
-        <label>Full Name</label>
-        <input type="text" required>
+        <!-- =========================
+             CONTACT FORM
+        ========================== -->
+        <form class="contact-form">
 
-        <label>Email</label>
-        <input type="email" required>
+            <input type="text" placeholder="Your Name" required>
 
-        <label>Phone Number</label>
-        <input type="tel">
+            <input type="email" placeholder="Your Email" required>
 
-        <label>Device Type</label>
-        <select>
-            <option>Laptop</option>
-            <option>Desktop</option>
-            <option>Printer</option>
-            <option>Router</option>
-        </select>
+            <input type="tel" placeholder="Phone Number">
 
-        <label>Describe the Problem</label>
-        <textarea rows="4"></textarea>
+            <textarea placeholder="Describe your issue" rows="5" required></textarea>
 
-        <button type="submit" class="btn">Submit Request</button>
+            <button type="submit">Send Message</button>
 
-    </form>
-</section>
+        </form>
 
-<footer>
-    <p>© 2026 SmartTech IT Solutions. All Rights Reserved.</p>
-</footer>
+        <!-- =========================
+             CONTACT INFORMATION
+        ========================== -->
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +256 700 123456</p>
+            <p><strong>Email:</strong> support@techsupportpro.com</p>
+            <p><strong>Address:</strong> Kampala, Uganda</p>
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+        <p>&copy; 2024 TechSupport Pro. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

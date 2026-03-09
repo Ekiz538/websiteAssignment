@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic page setup -->
     <meta charset="UTF-8">
-    <title>Gallery - SmartTech IT Solutions</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - TechSupport Pro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>SmartTech IT Solutions</h1>
-    <p>Reliable Computer Repair & Tech Support Services</p>
-</header>
+    <!-- =========================
+         HEADER + NAVIGATION
+    ========================== -->
+    <header>
+        <nav>
+            <div class="logo">TechSupport Pro</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- =========================
+         GALLERY PAGE MAIN SECTION
+    ========================== -->
+    <section id="gallery" class="gallery-page">
+        <h2>Our Work</h2>
 
-<section>
-    <h2>Our Work</h2>
-
-    <div class="card-container">
-
-        <div class="card">
-            <img src="images/repair.jpg" width="100%">
-            <p>Laptop Repair in Progress</p>
+        <div class="gallery-intro">
+            <p>
+                Explore some of the technical solutions and support services
+                we provide for homes, offices and businesses. These samples
+                represent our work in repair, setup, maintenance and IT support.
+            </p>
         </div>
 
-        <div class="card">
-            <img src="images/network.jpg" width="100%">
-            <p>Office Network Installation</p>
+        <!-- =========================
+             GALLERY GRID
+        ========================== -->
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">Server Setup</div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">Network Installation</div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">Hardware Repair</div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">Data Center</div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">Workstation Setup</div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">Tech Support</div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <img src="images/lab.jpg" width="100%">
-            <p>Our Repair Lab</p>
-        </div>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 SmartTech IT Solutions. All Rights Reserved.</p>
-</footer>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+        <p>&copy; 2024 TechSupport Pro. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
