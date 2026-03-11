@@ -1,73 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechSupport Pro</title>
-  <link rel="stylesheet" href="style.css" />
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSupport Pro - Computer Tech & Support</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">TechSupport Pro</div>
+    <!-- =========================
+         HEADER + NAVIGATION
+    ========================== -->
+    <header>
+        <nav>
+            <div class="logo">TechSupport Pro</div>
 
-    <div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="gallery.html">Gallery</a>
-       <a href="testimonials.html">Testimonials</a>
-       <a href="contact.html">Contact</a>
-    </nav>
-    </div>
-  </header>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Professional Computer Tech & Support</h1>
-      <p>
-        We provide fast, reliable and affordable computer repair, virus removal, data recovery and network installation services for homes and businesses.
-      </p>
-      <div class="hero-buttons">
-        <a href="#" class="btn primary">Contact</a>
-        <a href="#" class="btn secondary">View Services</a>
-      </div>
-    </div>
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Professional Computer Tech & Support</h1>
+            <p>
+                We provide fast, reliable and affordable computer repair,
+                virus removal, data recovery and network installation
+                services for homes and businesses.
+            </p>
+            <a href="contact.html" class="cta-button">Request Support</a>
+        </div>
+    </section>
 
-   
+    <!-- =========================
+         SERVICES PREVIEW SECTION
+         only preview cards for home page
+    ========================== -->
+    <section class="services-preview">
+        <h2>Our Core Services</h2>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div>
-      <h3>TechSupport Pro</h3>
-      <p>Your trusted </p>
-    </div>
+        <div class="card-container">
+            <div class="service-card">
+                <h3>💻 Laptop Repair</h3>
+                <p>Hardware replacement and advanced software troubleshooting.</p>
+            </div>
 
-    <div>
-      <h4>Quick Links</h4>
-      <p>Home</p>
-      <p>Products</p>
-      <p>Contact</p>
-    </div>
+            <div class="service-card">
+                <h3>🛡 Virus Removal</h3>
+                <p>Complete malware, spyware and ransomware protection services.</p>
+            </div>
 
-    <div>
-      <h4>Contact</h4>
-      <p>+256 700 000000</p>
-      <p>info@brandname.com</p>
-    </div>
-  </footer>
+            <div class="service-card">
+                <h3>🌐 Network Setup</h3>
+                <p>Professional home and office WiFi installation and configuration.</p>
+            </div>
+        </div>
+
+        <div class="services-button">
+            <a href="services.html" class="cta-button">View All Services</a>
+        </div>
+    </section>
+
+    <!-- =========================
+         WHY CHOOSE US SECTION
+    ========================== -->
+    <section class="about home-about">
+        <h2>Why Choose TechSupport Pro</h2>
+
+        <div class="about-content">
+            <p>
+                Our experienced technicians provide reliable and secure IT
+                solutions for individuals and businesses. We focus on fast
+                service, affordable pricing and long-term technical support.
+            </p>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Devices Repaired</p>
+            </div>
+
+            <div class="stat">
+                <h3>98%</h3>
+                <p>Customer Satisfaction</p>
+            </div>
+
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Support Availability</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+        <p>&copy; 2026 TechSupport Pro. All rights reserved.</p>
+    </footer>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
-
