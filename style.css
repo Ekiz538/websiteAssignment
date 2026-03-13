@@ -1,5 +1,5 @@
 /* =====================================================
-   GENERAL STYLES - affects the whole website
+   1. GENERAL STYLES
 ===================================================== */
 * {
     margin: 0;
@@ -14,8 +14,21 @@ body {
     background: #ffffff;
 }
 
+section {
+    padding: 70px 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #1a1a2e;
+}
+
 /* =====================================================
-   HEADER + NAVIGATION - affects top area of all pages
+   2. HEADER + NAVIGATION
 ===================================================== */
 header {
     background: #1a1a2e;
@@ -38,10 +51,11 @@ nav {
 
 .logo {
     color: #00d4ff;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
 }
 
 .nav-links {
@@ -67,8 +81,17 @@ nav {
     transform: translateY(-2px);
 }
 
+/* menu toggle controls */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
 /* =====================================================
-   HERO SECTION - affects the top welcome area
+   3. HERO SECTION
 ===================================================== */
 .hero {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -102,7 +125,7 @@ nav {
 }
 
 /* =====================================================
-   BUTTONS - affects call-to-action buttons
+   4. BUTTONS
 ===================================================== */
 .cta-button {
     display: inline-block;
@@ -122,23 +145,7 @@ nav {
 }
 
 /* =====================================================
-   GENERAL SECTION STYLING - affects normal sections
-===================================================== */
-section {
-    padding: 70px 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
-    color: #1a1a2e;
-}
-
-/* =====================================================
-   SERVICES PREVIEW - affects service cards on home page
+   5. HOME PAGE
 ===================================================== */
 .services-preview {
     padding-top: 80px;
@@ -181,9 +188,6 @@ h2 {
     margin-top: 2rem;
 }
 
-/* =====================================================
-   ABOUT / WHY CHOOSE US - affects lower home section
-===================================================== */
 .about {
     background: #f9f9f9;
     border-radius: 12px;
@@ -198,9 +202,6 @@ h2 {
     color: #444;
 }
 
-/* =====================================================
-   STATS - affects the company numbers section
-===================================================== */
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -225,7 +226,7 @@ h2 {
 }
 
 /* =====================================================
-   ABOUT PAGE - affects about page content
+   6. ABOUT PAGE
 ===================================================== */
 .about-page {
     padding-top: 140px;
@@ -277,7 +278,7 @@ h2 {
 }
 
 /* =====================================================
-   SERVICES PAGE - affects all full service cards
+   7. SERVICES PAGE
 ===================================================== */
 .services-page {
     background: #fff;
@@ -337,7 +338,7 @@ h2 {
 }
 
 /* =====================================================
-   GALLERY PAGE - affects gallery page layout
+   8. GALLERY PAGE
 ===================================================== */
 .gallery-page {
     background: #f9f9f9;
@@ -390,188 +391,142 @@ h2 {
 }
 
 /* =====================================================
-   TESTIMONIALS PAGE - affects testimonial layout
+   9. TESTIMONIALS PAGE
 ===================================================== */
-
-.testimonials-page{
-    padding-top:140px;
-    padding-bottom:80px;
+.testimonials-page {
+    padding-top: 140px;
+    padding-bottom: 80px;
 }
 
-/* intro paragraph */
-.testimonials-intro{
-    max-width:750px;
-    margin:0 auto 40px auto;
-    text-align:center;
+.testimonials-intro {
+    max-width: 750px;
+    margin: 0 auto 40px auto;
+    text-align: center;
 }
 
-.testimonials-intro p{
-    font-size:1.1rem;
-    color:#444;
-    line-height:1.8;
+.testimonials-intro p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
 }
 
-/* testimonial grid */
-.testimonial-grid{
-
-    max-width:1100px;
-    margin:0 auto;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-
+.testimonial-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-/* testimonial cards */
-.testimonial-card{
-
-    background:#f9f9f9;
-
-    padding:25px;
-
-    border-radius:10px;
-
-    border-left:4px solid #00d4ff;
-
-    transition:0.3s;
-
+.testimonial-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #00d4ff;
+    transition: 0.3s;
 }
 
-.testimonial-card:hover{
-
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
-
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* star rating */
-.stars{
-    color:#ffd700;
-    font-size:1.4rem;
-    margin-bottom:10px;
+.stars {
+    color: #ffd700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
-/* testimonial text */
-.testimonial-card p{
-
-    font-style:italic;
-    margin-bottom:12px;
-    line-height:1.6;
-    color:#444;
-
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #444;
 }
 
-/* name */
-.testimonial-card h4{
-
-    color:#1a1a2e;
-    margin-bottom:4px;
-
+.testimonial-card h4 {
+    color: #1a1a2e;
+    margin-bottom: 4px;
 }
 
-/* role */
-.testimonial-card span{
-
-    color:#666;
-    font-size:0.9rem;
-
+.testimonial-card span {
+    color: #666;
+    font-size: 0.9rem;
 }
 
-/* == CONTACT PAGE - affects contact page layout == */
-
-.contact-page{
-    padding-top:140px;
-    padding-bottom:80px;
-    text-align:center;
+/* =====================================================
+   10. CONTACT PAGE
+===================================================== */
+.contact-page {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
 }
 
-/* intro text */
-.contact-intro{
-    max-width:700px;
-    margin:auto;
-    margin-bottom:40px;
+.contact-intro {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
-.contact-intro p{
-    font-size:1.1rem;
-    color:#444;
-    line-height:1.8;
+.contact-intro p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
 }
 
-/* form container */
-.contact-form{
-    max-width:600px;
-    margin:0 auto 40px auto;
-
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-/* inputs and textarea */
 .contact-form input,
-.contact-form textarea{
-
-    width:100%;
-    padding:12px;
-
-    border:2px solid #ddd;
-    border-radius:6px;
-
-    font-size:1rem;
-    font-family:inherit;
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
 }
 
-/* focus effect */
 .contact-form input:focus,
-.contact-form textarea:focus{
-
-    outline:none;
-    border-color:#00d4ff;
-
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #00d4ff;
 }
 
-/* button */
-.contact-form button{
-
-    background:#1a1a2e;
-    color:#fff;
-
-    padding:12px;
-    border:none;
-
-    border-radius:6px;
-
-    font-size:1.05rem;
-    cursor:pointer;
-
-    transition:0.3s;
-
+.contact-form button {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.contact-form button:hover{
-
-    background:#00d4ff;
-    color:#1a1a2e;
-
+.contact-form button:hover {
+    background: #00d4ff;
+    color: #1a1a2e;
 }
 
-/* contact details */
-.contact-info{
-
-    text-align:center;
-    font-size:1.1rem;
-
+.contact-info {
+    text-align: center;
+    font-size: 1.1rem;
 }
 
-.contact-info p{
-
-    margin:6px 0;
-
+.contact-info p {
+    margin: 6px 0;
 }
 
-/* == FOOTER - affects bottom area of all pages == */
+/* =====================================================
+   11. FOOTER
+===================================================== */
 footer {
     background: #1a1a2e;
     color: #fff;
@@ -580,39 +535,81 @@ footer {
 }
 
 /* =====================================================
-   MOBILE IMPROVEMENTS - cleaner phone layout
+   12. MOBILE RESPONSIVE STYLES
 ===================================================== */
 @media (max-width: 768px) {
-
     header {
-        padding: 0.8rem 0;
+        background: linear-gradient(to left, rgba(26, 26, 46, 0.88) 55%, rgba(26, 26, 46, 0) 100%);
+        backdrop-filter: blur(6px);
+        padding: 0.6rem 0;
     }
 
     nav {
-        flex-direction: column;
-        gap: 0.8rem;
-        padding: 0.8rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        gap: 0.5rem;
     }
 
     .logo {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 0.2rem;
+        order: 1;
+        flex: 1;
+        text-align: left;
+        font-size: 1.6rem;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        order: 2;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 0.35rem 0.7rem;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 6px;
+        text-align: right;
     }
 
     .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.6rem;
+        display: none;
+        order: 3;
         width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0.5rem;
+        gap: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        list-style: none;
+        width: 170px;
+        text-align: right;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     }
 
     .nav-links a {
         display: block;
-        width: 180px;
-        text-align: center;
-        padding: 0.7rem 1rem;
-        font-size: 1rem;
+        width: 100%;
+        text-align: right;
+        padding: 0.8rem 0;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        color: #fff;
+    }
+
+    .nav-links a:hover {
+        background: transparent;
+        color: #00d4ff;
+        transform: none;
     }
 
     .hero {
@@ -621,12 +618,24 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.3;
     }
 
-    .hero-content p {
+    .hero-content p,
+    .services-intro p,
+    .gallery-intro p,
+    .testimonials-intro p,
+    .contact-intro p,
+    .about-page-content p,
+    .about-content p {
         font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        line-height: 1.3;
         margin-bottom: 1.2rem;
     }
 
@@ -634,42 +643,34 @@ footer {
         padding: 45px 1rem;
     }
 
-    .about-page,
-    .services-page,
-    .gallery-page,
-    .testimonials-page,
-    .contact-page {
-        padding-top: 320px;
-        padding-bottom: 60px;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1.2rem;
-    }
-
-    .about-page-content p,
-    .services-intro p,
-    .gallery-intro p,
-    .testimonials-intro p,
-    .contact-intro p {
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-
     .card-container,
     .service-grid,
-    .gallery-grid,
     .testimonial-grid,
+    .gallery-grid,
     .about-highlights,
     .stats {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .contact-form {
+    .service-card,
+    .service-card-full,
+    .testimonial-card,
+    .highlight-box {
+        padding: 1.2rem;
+    }
+
+    .gallery-item {
         max-width: 100%;
+        aspect-ratio: 4 / 2.4;
     }
 
+    .gallery-placeholder {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .contact-form,
     .contact-form input,
     .contact-form textarea,
     .contact-form button {
