@@ -25,6 +25,13 @@ h2 {
     color: #1a1a2e;
 }
 
+/* active page link */
+.nav-links a.active {
+    background: rgba(0,212,255,0.15);
+    border-color: #00d4ff;
+    color: #00d4ff;
+}
+
 /* 2. HEADER + NAVIGATION */
 header {
     background: #1a1a2e;
@@ -149,12 +156,12 @@ nav {
 }
 
 .service-card {
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #2b3b5c 0%, #243352 100%);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #00d4ff;
 }
 
 .service-card:hover {
@@ -169,7 +176,7 @@ nav {
 }
 
 .service-card p {
-    color: #444;
+    color: #fffefe;
     font-size: 1rem;
 }
 
@@ -243,11 +250,12 @@ nav {
 }
 
 .highlight-box {
-    background: #f4f4f4;
-    padding: 1.5rem;
+    background: linear-gradient(135deg, #2b3b5c 0%, #243352 100%);
+    padding: 2rem;
     border-radius: 10px;
-    border-left: 4px solid #00d4ff;
+    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid #00d4ff;
 }
 
 .highlight-box:hover {
@@ -256,12 +264,12 @@ nav {
 }
 
 .highlight-box h3 {
-    color: #1a1a2e;
+    color: #00d4ff;
     margin-bottom: 0.8rem;
 }
 
 .highlight-box p {
-    color: #444;
+    color: #ffffff;
     line-height: 1.7;
 }
 
@@ -511,14 +519,17 @@ nav {
     margin: 6px 0;
 }
 
-/* blue container box */
+/* contact form container */
 .contact-box {
-    background: #f3f6fb;
+    background: linear-gradient(
+        135deg,
+        rgba(45, 73, 129, 0.1),
+        rgba(25, 40, 68, 0.1)
+    );
     padding: 35px;
     border-radius: 12px;
     max-width: 650px;
     margin: 0 auto;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
     border-top: 4px solid #00d4ff;
 }
 
