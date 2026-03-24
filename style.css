@@ -350,6 +350,34 @@ nav {
     color: #ffffff;
 }
 
+.price{
+
+    margin-top:14px;
+
+    padding-top:8px;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+    font-weight:700;
+
+    color:#00d4ff;
+
+}
+
+.price{
+
+    margin-top:14px;
+
+    padding-top:8px;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+    font-weight:700;
+
+    color:#00d4ff;
+
+}
+
 /* 8. GALLERY PAGE */
 .gallery-page {
     background: #f9f9f9;
