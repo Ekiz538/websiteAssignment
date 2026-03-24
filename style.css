@@ -226,12 +226,14 @@ nav {
 .about-page {
     padding-top: 140px;
     padding-bottom: 80px;
+    transition: all 0.3s ease;
 }
 
 .about-page-content {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .about-page-content p {
@@ -239,6 +241,7 @@ nav {
     color: #444;
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    transition: all 0.3s ease;
 }
 
 .about-highlights {
@@ -247,6 +250,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .highlight-box {
@@ -258,24 +262,26 @@ nav {
     border-top: 4px solid #00d4ff;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .highlight-box:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
 }
 
 .highlight-box h3 {
     color: #00d4ff;
     margin-bottom: 0.8rem;
+    transition: all 0.3s ease;
 }
 
 .highlight-box p {
     color: #ffffff;
     line-height: 1.7;
+    transition: all 0.3s ease;
 }
-
-transition: all 0.3s ease;
 
 .highlight-box::before {
     content: "";
@@ -283,6 +289,7 @@ transition: all 0.3s ease;
     inset: 0;
     border-radius: 10px;
     border: 1px solid rgba(0, 212, 255, 0.15);
+    transition: all 0.3s ease;
 }
 
 /* 7. SERVICES PAGE */
