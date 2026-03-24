@@ -256,11 +256,13 @@ nav {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     border-top: 4px solid #00d4ff;
+    position: relative;
+    overflow: hidden;
 }
 
 .highlight-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .highlight-box h3 {
@@ -271,6 +273,16 @@ nav {
 .highlight-box p {
     color: #ffffff;
     line-height: 1.7;
+}
+
+transition: all 0.3s ease;
+
+.highlight-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 212, 255, 0.15);
 }
 
 /* 7. SERVICES PAGE */
